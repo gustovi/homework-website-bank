@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport\" content="width=device-width, initial-scale=1.0">
+    <title>Banca Mea - Calculator de Depozit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Banca Mea</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="despre.html">Despre</a></li>
+                <li><a href="calculator_credite.html">Calculator Credite</a></li>
+                <li><a href="calculator_depozit.html">Calculator Depozit</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="calc-depozit">
+            <h2>Calculator de Depozit</h2>
+            <form>
+                <label for="suma">Suma depozitată:</label>
+                <input type="number" id="suma" name="suma" placeholder="introduceti suma">
+
+                <label for="perioada">Perioada de depozitare:</label>
+                <input type="number" id="perioada" name="perioada" placeholder="introduceti perioada">
+
+                <button type="button" onclick="calculeazaDepozit()">Calculează</button>
+                <div id="afisare"></div>
+            </form>
+            
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Banca Mea 2021</p>
+    </footer>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

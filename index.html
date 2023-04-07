@@ -1,0 +1,120 @@
+<!-- Proiect - Calculator de credite
+    O nouă bancă dorește să creeze un website care va conține informații despre
+    depozitele și creditele pe care le oferă. De asemenea, dorește să aibă o
+    funcționalitate prin care utilizatorii să poată simula planul de plată printr-un
+    calculator de credite și depozite.
+    Cerințe:
+    1. Creați un site de prezentare pentru bancă. Alegeți un nume și configurați
+    design-ul site-ului. Puteți folosi ce am învățat pentru customizare.
+    2. Creați o pagină “Despre” ce va conține informații despre bancă. Ea poate fi
+    accesată din prima pagină prin apăsarea unui buton.
+    3. Creați o pagină “Calculator credite” ce va simula aplicarea pentru un
+    credit.. Formularul trebuie să primească suma ce va fi împrumutată și
+    perioada de plată, iar la apăsarea unui buton de calculare să se prezinte
+    planul de plată pentru suma împrumutată la care se va adăuga o
+    dobândă de 4.6%.
+    4. Creați o pagină “Calculator depozit” care va fi similar cu cel pentru credit,
+    însă de data aceasta va calcula suma întoarsă pentru un depozit pe
+    termen lung. Formularul va conține suma depozitată, perioada de
+    depozitare și va afișa planul de plată cu o dobândă de 1% pe an.
+    Folosiți tot ce am studiat până acum: HTML, CSS (Grid, Flex, Bootstrap), funcții,
+    obiecte, instrucțiuni în JS, Git. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria Bank - Calculator de Credite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Victoria Bank</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="despre.html">Despre</a></li>
+                <li><a href="calculator_credite.html">Calculator Credite</a></li>
+                <li><a href="calculator_depozit.html">Calculator Depozit</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <h2>Încredere, Seriozitate, Stabilitate</h2>
+            <p>Vino la noi pentru cele mai avantajoase rate!</p>
+            <!-- Button to open contact modal -->
+            <button onclick="showModal()">Aplica</button>
+        </section>
+
+        <section>
+            <div class="chatbox-button">
+                <i class="fa fa-comments"></i>
+            </div>
+
+            <div class="chatbox">
+                <div class="chatbox-header">
+                    <h3>Chat</h3>
+                    <button class="close-button"><i class="fa fa-times"></i></button>
+                </div>
+                <div class="messages">
+                    <div class="message received">
+                        <p>Hello!</p>
+                    </div>
+                    <div class="message sent">
+                        <p>Hi there!</p>
+                    </div>
+                </div>
+                <form id="message-form">
+                    <input type="text" id="message-input" placeholder="Type your message...">
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2>Despre Noi</h2>
+            <p>Victoria Bank este o bancă cu o vastă experiență în domeniul financiar. Îți oferim cele mai bune rate și
+                cele mai bune servicii, îți garantăm că nu vei regreta alegerea făcută. Vino la noi și fii sigur că ai
+                aleas cea mai bună bancă din piață!</p>
+            <p>Suntem un brand moldovenesc cu o poveste unică, autentică — un inovator de care se leagă primul card
+                bancar, primul bancomat, prima aplicație mobilă și primul credit pentru micii antreprenori în Republica
+                Moldova.</p>
+
+            <h2>Victoriabank în cifre</h2>
+            <p> Peste 270 000 clienți activi, 100 de sedii în peste 30 de localități din țară. Numărul angajaților
+                băncii depășește 1 000 de persoane, cu o medie de vârstă de 34 de ani. Printre aceștia se numără și
+                astăzi persoane angajate încă în primii ani de la fondare.
+                Victoriabank are un destin de pionier în wild, wild East și o poveste care impresionează cu adevărat,
+                are un nume care a acumulat în timp un brand equity considerabil — consolidat acum prin endorsarea de
+                către Grupul Banca Transilvania — care i-a oferit o identitate vizuală capabilă să susțină capitalul de
+                vitalitate al băncii și un «V» — de la Victorie, pentru #poftădebusiness și dorința de a recâștiga
+                leadership-ul pe piața bancară din Republica Moldova.
+            </p>
+            <h2>Istoric Victoriabank</h2>
+            <p> Victoriabank a făcut primii pași în decembrie 1989, în Republica Moldova.
+                A primit denumirea Victoriabank, ca simbol al „luptei pentru victorie” sau, cu alte cuvinte, al ambiției
+                de a crește. De 30 de ani, Victoriabank este în galop, galop simbolizat inclusiv de calul care a facut
+                parte din sigla băncii pînă în decembrie 2019 și confirmat de clasarea băncii în topul celor mai mari
+                trei instituții bancare din Republica Moldova.
+
+                Începând cu 02.12.2019, Victoriabank are o nouă identitate de brand, care redă energia și caracterul
+                modern al brandului, maximizează atât prezența sa digitală, cât și cea fizică și vine odată cu
+                aniversarea celor 30 de ani de la fondare. Culoarea albastră ce inspiră încredere și vitalitate a fost
+                păstrată. Steagul este noul element în siglă, o continuare a inițialei „V” din denumirea băncii, care
+                întărește poziționarea Victoriabank pe piața bancară din țară și înseamnă luptător și victorie.
+                Totodată, sigla băncii conține acum încă un element important, și anume apartenența la Grupul Financiar
+                Banca Transilvania.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Banca Mea 2021</p>
+    </footer>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+
+</html>
